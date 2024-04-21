@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cafe</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="mystyle.css">
+
+  <style>
+    .nav {
+      
+      display:flex;
+      border: none;
+
+    }
+    .nav-link {
+      color:white;
+      border: none;
+
+    }
+
+    .jumbotron span {
+      font-weight: bold;
+      font-family:cursive;
+    }
+
+    .jumbotron {
+
+      background-image:linear-gradient(to right, #C7B0A7
+,#4c5ea8);
+      color:black;
+      padding:60px;
+      margin-top:10px;
+      text-align: center;
+      background-size:cover;
+      border: none;
+
+    }
+    .nav{
+      font-family:cursive;
+
+    }
+    #a{
+      font-family: cursive;
+    color:darkslateblue;
+    font-weight: bold;
+    }
+    #b{
+    
+     
+      font-weight: 100;
+    }
+    .display-4{
+      font-family: cursive;
+      color:#242f40;
+      
+    }
+    .btn{
+      background-color: blue;
+      cursor: pointer;
+    }
+    #abc{
+      margin: 0;
+      padding: 0;
+    }
+#xyz{
+  font-family: cursive;
+    color:black;
+    
+    }
+    .about-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.6;
+      font-family: cursive;
+    }
+    #para1{text-align:center;
+      font-family:cursive;
+      color:black;
+    }
+    #contact{
+      font-family: cursive;
+    color:black;
+    }
+    #btn{
+      border-color: white;
+      color: white;
+
+    }
+  .jumbotron{
+  margin-bottom:1px;
+  margin-left:1px ;
+  margin-right:1px;
+  margin-top: 1px;
+/*  margin:auto;*/
+  }
+  .card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%; /* Adjust as needed */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0; 
+
+.card h2 {
+  margin-top: 10px;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.card button{
+
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+
+}
+
+.card button:hover {
+  background-color: #0056b3;
+
+}
+
+
+  </style>
+  </div>
+</head>
+
+<div id="myModal" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header p0">
+  
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+</div>
+<div class="modal-body p0">
+<img src="images/ET Awards 2023.jpg" alt="F&B Leaders Economic Times Awards 2023, Award Winniner Buttercup Model-Cafe "> 
+</div></div></div></div>
+<!--Popup Window End--->  
+ 
+ <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+   <h4>WELCOME TO BUTTERCUP CAFE !</h4>
+    </a>
+    <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <ul class="nav ">
+  <li class="nav-item"> <a href="#" class="nav-link">Home</a> </li>
+    <li class="nav-item"> <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Our Menu </a>
+     <div class="dropdown-menu">
+        <a href="#" class="dropdown-item"> </a>
+        <a href="#" class="dropdown-item">Bread</a>
+        <a href="#" class="dropdown-item">Cakes</a>
+        <a href="#" class="dropdown-item">Cookies</a>
+        <a href="#" class="dropdown-item">Specialty Items</a>
+        <a href="#" class="dropdown-item">Dessert ice-creams</a>
+        <a href="#" class="dropdown-item"> Beverages</a>
+        <a href="#" class="dropdown-item">Sandwitches</a>
+      </div>
+    </li>
+    <li class="nav-item"> <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Ordering Options</a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item"> Round Cakes</a>
+        <a href="#" class="dropdown-item">Sheet Cakes</a>
+        <a href="#" class="dropdown-item">Layer Cakes</a>
+        <a href="#" class="dropdown-item">Cupcakes</a>
+        <a href="#" class="dropdown-item">Cake Pops</a>
+        <a href="#" class="dropdown-item">Bundt Cakes</a>
+        <a href="#" class="dropdown-item">Custom Cakes</a>
+      </div>
+    </li>
+    <li class="nav-item"> <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Events</a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Party </a>
+        <a href="#" class="dropdown-item">Live Music Nights</a>
+        <a href="#" class="dropdown-item"></a>
+        <a href="#" class="dropdown-item">Themed Nights</a>
+        <a href="#" class="dropdown-item">Seasonal Celebrations</a>
+        <a href="#" class="dropdown-item">Charity Fundraisers</a>
+      </div>
+     </li>
+    <li class="nav-item"> <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"> Themes</a> 
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Cozy Aesthetic</a>
+        <a href="#" class="dropdown-item">Princesses</a>
+        <a href="#" class="dropdown-item">Coffee Culture Imagery</a>
+        <a href="#" class="dropdown-item">Food Photography</a>
+        <a href="#" class="dropdown-item">Seasonal Themes</a>
+        <a href="#" class="dropdown-item">Interactive Elements</a>
+      </div>
+    </li>
+     <li class="nav-item"> <a href="#" class="nav-link">Contact Us</a> </li>
+     <li class="nav-item"> <a href="#" class="nav-link">FAQ</a> </li> 
+   
+        </li>
+        
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+ 
+<ul class="nav ">
+  <div class="container">
+    <div class="row">
+<div class="jumbotron">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" id="para">
+<section class="about-section">
+
+
+<div class="row">
+    <div class="col-md-6">
+      <img src="images\1st.jpg"  width="800"   height="300" class="img-fluid">
+    </div><hr>
+    <div class="col-md-6" id="para">
+      <h2><b>Welcome To<br>
+        Buttercup Cafe !</b>
+        <br> </b></h2>
+<p id="para1"><p><b>
+            Discover the extraordinary at Buttercup Cafe. 
+            Our commitment to quality and
+            exceptional service makes us your top choice. 
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit.
+          </p>
+</div>
+</div>
+          
+</div>
+</head>
+<hr>
+<body>
+  
+      <div class="col-md-12">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images\img2.jpg" alt="First slide"  width="100"   height="450" id="a">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images\hey.jpg" alt="Second slide"  width="100"   height="450" id="b">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images\img1.jpg" alt="Third slide" width="100"   height="450" id="c">
+    </div>
+<div class="carousel-item">
+      <img class="d-block w-100" src="images\g1.jpg" alt="Third slide" width="100"   height="450" id="d">
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>  
+  </div>
+  <hr>
+
+<body>
+  <div class="col-md-12" id="para">
+<section class="about-section">
+<h2><b>About Us</b></h2><hr>
+  <p id="para1">Welcome to our <span>Buttercup Cafe !</span> <br>We are passionate about creating delicious . Our journey began may 2021, and since then, we have been dedicated to crafting high-quality treats for our customers.</p>
+  <p id="para1">At Buttercup Cafe, we believe in using only the finest ingredients to ensure that every bite is a delightful experience. Whether you're celebrating a birthday, wedding, or any other milestone, our talented team is here to bring your vision to life.</p>
+  <p id="para1">Customer satisfaction is our top priority, and we strive to exceed expectations with every order. From classic flavors to custom designs, we're committed to providing you with cakes that not only taste amazing but also leave a lasting impression.</p>
+  <p id="para1">Thank you for choosing Rain's Bakery for your sweet celebrations. We look forward to serving you and being a part of your memorable moments !</p>
+</section>
+<hr>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="col-md-12" id="para">
+<section class="about-section">
+<h2><b>Menu</b></h2><hr>
+<div class="card-container">
+  <div class="card">
+    <img src="images\g2.png" alt="Image 1">
+    <h2>Panner Tikka</h2>
+    <p> Tender cubes of paneer marinated in a tantalizing blend of spices , skewered and grilled to perfection, delivering a burst of smoky,aromatic flavors in every bite.</p>
+    <button type="submit" class="btn btn-primary">Order now</button>
+  </div>
+  <div class="card">
+    <img src="images\g3.png" alt="Image 2">
+    <h2>Chinese</h2>
+    <p>A tantalizing blend of savory sauces, crisp vegetables, tender meats,bursting with flavor and nutrients, offering a symphony of flavors that excite the palate and evoke the essence of culinary craftsmanship</p>
+    <button  type="submit" class="btn btn-primary">Order now</button>
+  </div>
+  <div class="card">
+    <img src="images\g4.png" alt="Image 3">
+    <h2>Mixed Veggie</h2>
+    <p>An array of vibrant vegetables, bursting with flavor and nutrients, tender meats,and aromatic flavors in every bite,harmoniously combined to create a delightful culinary symphony.</p>
+    <button  type="submit" class="btn btn-primary">Order now</button>
+  </div>
+</div>
+<hr>
+
+<div class="card-container">
+  <div class="card">
+    <img src="images\g5.png" alt="Image 1">
+    <h2>Desert</h2>
+    <p>Indulge in a decadent desert oasis layers of rich, creamy sweetness, ocean-fresh flavor, artfully crafted to melt away stress and transport you to a blissful realm of pure delight with every luscious bite.</p>
+    <button  type="submit" class="btn btn-primary">Order now</button>
+  </div>
+  <div class="card">
+    <img src="images\g7.png" alt="Image 2">
+    <h2>Chinese Salad</h2>
+    <p> A refreshing medley of crisp greens, crunchy vegetables, and zesty dressings, harmonizing flavors and textures to create a tantalizing culinary experience that invigorates the palate</p>
+    <button  type="submit" class="btn btn-primary">Order now</button>
+  </div>
+  <div class="card">
+    <img src="images\g8.png" alt="Image 3">
+    <h2>Fried Shrimp</h2>
+    <p>Crispy on the outside, succulent on the inside—fried shrimp delights with its golden-brown perfection, offering a tantalizing crunch followed by a burst of juicy.</p>
+    <button  type="submit" class="btn btn-primary">Order now</button>
+  </div>
+</div>
+<hr>
+
+<div class="card-container">
+  <div class="card">
+    <img src="images\g9.png" alt="Image 1">
+    <h2>Fruit Salad</h2>
+    <p> A colorful symphony of fresh, juicy fruits, meticulously diced and tossed together to create a refreshing delight, offering a burst of natural sweetness and a medley of flavors in every spoonful.</p>
+    <button  type="submit" class="btn btn-primary">Order now</button>
+  </div>
+  <div class="card">
+    <img src="images\g10.png" alt="Image 2">
+    <h2>Fruit Cherry</h2>
+    <p>Indulge in a delightful fruit cherry dish plump, succulent cherries bathed in a luscious syrup, offering a burst of sweet-tart flavor and a touch of luxury to tantalize your taste buds.</p>
+    <button  type="submit" class="btn btn-primary">Order now</button>
+  </div>
+  <div class="card">
+    <img src="images\11.png" alt="Image 3">
+    <h2>Fruit Chatt</h2>
+    <p>A vibrant mosaic of seasonal fruits, tossed with zesty spices, tangy lemon juice, and a hint of sweetness, creating a refreshing explosion of flavors that dances on the palate with every joyful bite.</p>
+    <button  type="submit" class="btn btn-primary">Order now</button>
+  </div>
+</div>
+
+
+</body>
+</html>
+<hr>
+    <section class="Gallary section">
+      <div class="col-md-12">
+    <h2><span>.....Sweet Delights Gallery.....</span></h2><hr>
+    <div class="row">
+        <div class="col-md-3">
+          <figure>
+            <img src="images\x4.png" class="img-fluid" width="500" height="300">
+         
+        </div>
+        <div class="col-md-3">
+          <figure>
+            <img src="images\x7.png" class="img-fluid" width="500" height="300">
+          
+        </div>
+        <div class="col-md-3">
+          <figure>
+            <img src="images\x12.png" class="img-fluid" width="500" height="300">
+          
+        </div>
+        <div class="col-md-3">
+          <figure>
+            <img src="images\x14.png" class="img-fluid" width="500" "height="300">
+     
+      </figure>
+    </div>
+  <div class="row">
+    <div class="col-md-3">
+      <figure>
+        <img src="images\x10.jpg" class="img-fluid" width="500" height="300">
+      
+    </div>
+    <div class="col-md-3">
+      <figure>
+        <img src="images\x11.jpg" class="img-fluid" width="500" height="300">
+    </div>
+    <div class="col-md-3">
+      <figure>
+        <img src="images\x15.jpg" class="img-fluid" width="500" height="300">
+    </div>
+    <div class="col-md-3">
+      <figure>
+        <img src="images\x3.jpg" class="img-fluid" width="500" height="300">
+      
+      </figure>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container" id="contact">
+  <h1><b>....Contact With Us....</b></h1>
+  <hr>
+  <br>
+<div class="row"> 
+     <div class="col-md-6">
+    <h4><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+</svg>  <b>Our Location</b></h4><hr> 
+      <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:350px;"><div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0"
+iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2183.6179646353658!2d-5.1137327237590195!3d56.81818660943372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488eccab60d0d69d%3A0xb970ece21e91d69d!2s41%20High%20St%2C%20Fort%20William%20PH33%206DH%2C%20UK!5e0!3m2!1sen!2sin!4v1711824969986!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<a class="my-codefor-googlemap" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="get-map-data">premium bootstrap themes</a><style>#embed-ded-map-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+    </div>
+    <div class="col-md-6">
+      <h4 align="center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-inbound-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0"/>
+</svg> <b>Contact Us</b></h4><hr>
+      <div class="row">
+        <div class="col-md-6">
+          
+          <input type="text" placeholder="Fullname" class="form-control">
+          
+          <input type="email" placeholder="Email ID" class="form-control">
+        </div>
+        <div class="col-md-6">
+          
+          <input type="date" placeholder="Date of Birth" class="form-control">
+          
+          <input type="password" placeholder="Password" class="form-control">
+          
+        </div>
+          
+          <textarea class="form-control" rows="6"> Type your address </textarea>
+      </div>
+    </div>
+
+<hr>
+<section id="reservations" class="reservation-section">
+  <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="section-heading">
+          Make a Booking
+          </h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" class="form-control"
+                id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">
+              Phone Number
+              </label>
+              <input type="text"
+                class="form-control" id="phoneNumber"
+                placeholder="Enter your phone number">
+            </div>
+            <button type="submit" class="btn btn-primary">
+            Submit
+            </button>
+          </form>
+        </div>
+        <br><br>
+        <div class="col-lg-6 opening-time">
+          <h2 class="section-heading">Opening Times</h2>
+          <p class="text-center">
+            <span>Monday—Thursday: 08:00 — 22:00</span><br>
+            <span>Friday—Saturday: 09:00 — 23:00</span><br>
+        <span>Sunday: 10:00 — 17:00</span>
+
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="col-md-12"><hr>
+<h4><b>Follow Us</h4></b></h4><hr>
+<ul class="list-inline">
+<li class="list-inline-item"><a href="https://www.facebook.com"><img
+src="images\download.png" alt="Facebook" height="40"></a></li>
+
+<li class="list-inline-item"><a href="https://www.instagram.com"><img
+src="images\insta.jpg" alt="Instagram" height="40"></a></li>
+
+<li class="list-inline-item"><a href="https://www.twitter.com"><img
+src="images\twi.webp" alt="Twitter" height="40"></a></li></hr>
+<br>
+<br>
+<br>
+©2021-2024 fnp.com.All rights reserved.
+
+</div>
+</div>
+</div>
+</footer>
+</html>
+
+    
+</body>
+</html>
+</body>
+</html>
+
+
